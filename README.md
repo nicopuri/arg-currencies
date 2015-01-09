@@ -1,7 +1,7 @@
 arg-currencies
 ==============
 
-Get the USD (Official and Blue) and BTC price in Argentina. The BTC price is requested to [Bitstamp]('https://www.bitstamp.net/api/ticker/').
+Get the USD (Official and Blue) and BTC price in Argentina. The BTC price is requested to [Bitfinex]('https://www.bitfinex.com/').
 
 ## Install
 
