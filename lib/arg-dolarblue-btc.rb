@@ -5,7 +5,7 @@ class ArgCurrency
 
 	def initialize(argv=[""])
 		@urlDolar = 'http://ws.geeklab.com.ar/dolar/get-dolar-json.php'
-		@urlBitstamp = 'https://www.bitstamp.net/api/ticker/'
+                @urlBitstamp = 'https://api.bitfinex.com/v1/pubticker/btcusd'
 	end
 
 	def get_currencies
@@ -22,7 +22,7 @@ class ArgCurrency
 		json = JSON.parse(response.body)
 
 		puts '================= BTC =================='
-		puts 'Last:'.colorize(:light_black).underline + " $#{json['last']}".bold
+                puts 'Last:'.colorize(:light_black).underline + " $#{json['last_price']}".bold
 		puts 'High:'.colorize(:light_black).underline + " $#{json['high']}"
 		puts 'Low:'.colorize(:light_black).underline + " $#{json['low']}"
 		puts 'Bid:'.colorize(:light_black).underline + " $#{json['bid']}"

@@ -1,9 +1,9 @@
 Gem::Specification.new do |s|
   s.name          = 'arg-dolarblue-btc'
-  s.version       = '0.1.1'
+  s.version       = '0.1.2'
   s.date          = '2014-08-28'
   s.summary       = "Dolar Blue and BTC price"
-  s.description   = "A simple gem that show you the Dolar Blue and BTC price. The BTC price is from Bitstamp."
+  s.description   = "A simple gem that show you the Dolar Blue and BTC price. The BTC price is taken from Bitfinex."
   s.authors       = ["Nicolas Purita"]
   s.email         = 'nicospuri@gmail.com'
   s.files         = ["lib/arg-dolarblue-btc.rb", "bin/arg-blues"]
